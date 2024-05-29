@@ -130,6 +130,32 @@ body {
 
 .header-top-right {
     grid-area: header-top-right;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    align-items: center;
+    justify-items: right;
+    gap: 2rem;
+    
+    img {
+        height: 3rem;
+        padding: .5rem;
+    }
+    span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: .5rem;
+    }
+    img:hover {
+        filter: invert();
+        background-color: white;
+        border-radius: 50%;
+    }
+    span:hover {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
 }
 
 .header-user {
