@@ -116,13 +116,20 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
-
+    
     img {
-        height: 2rem;
+        height: 3rem;
+        padding: .5rem;
+        align-self: center;
+    }
+    img:hover {
+        filter: invert();
+        background-color: white;
+        border-radius: 50%;
     }
     input {
         padding-left: 3ch;
-        border-radius: 10px;
+        border-radius: 20px;
         background-color: var(--fourth-color);
         border: none;
     }
