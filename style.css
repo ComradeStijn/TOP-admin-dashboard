@@ -50,18 +50,22 @@ body {
     }
 
     .sidebar-cell {
-        height: 3rem;
-        padding-left: 10%;
-        margin-top: 1rem;
+        height: auto;
+        /* padding-left: 10%; */
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 10%;
+        margin-right: 10%;
         display: grid;
         grid-template-columns: 60px 3fr;
+        grid-template-rows: 1fr;
         align-items: center;
-        gap: 5%;
+        column-gap: 5%;
 
         img {
             filter: invert();
-            height: 60%;
-            justify-self: center;
+            height: 50%;
+            justify-self: center;   
         }
         span {
             font-size: 1.5rem;
@@ -73,6 +77,21 @@ body {
     .lower-nav {
         margin-top: 2rem;
     }
+}
+
+.sidebar-cell:hover, .logo-header:hover {
+    background-color: white;
+    border-radius: 30px;
+
+    img {
+        filter: none;
+    }
+    span, #logo-name {
+        color: black;
+    }
+}
+.logo-header:hover {
+    border-radius: 0;
 }
 
 .header-container {
