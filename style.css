@@ -29,10 +29,8 @@ body {
     height: 100%;
     display: grid;
     align-content:flex-start;
-    gap: 100px;
     grid-template-rows: repeat(auto-fill, min-max(10vh, 1fr));
     .logo-header {
-        outline: 1px solid red;
         height: 10vh;
         padding-left: 10%;
         display: grid;
@@ -42,12 +40,38 @@ body {
         
         img {
             width: 100%;
-            justify-self: end;
             filter: invert();
+            justify-self: center;
         }
 
         #logo-name {
             font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .upper-nav {
+        outline: 1px solid red;
+    }
+    
+
+    .sidebar-cell {
+        height: 3rem;
+        padding-left: 10%;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 60px 3fr;
+        align-items: center;
+        gap: 5%;
+
+        img {
+            filter: invert();
+            height: 60%;
+            justify-self: center;
+        }
+        span {
+            font-size: 1.5rem;
             color: white;
             font-weight: bold;
         }
