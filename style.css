@@ -15,7 +15,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: clamp(250px, 20vw, 500px) 1fr;
+    grid-template-columns: clamp(300px, 20vw, 500px) 1fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
     "sidebar header"
@@ -28,19 +28,19 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-
+    align-content:flex-start;
+    gap: 100px;
+    grid-template-rows: repeat(auto-fill, min-max(10vh, 1fr));
     .logo-header {
         outline: 1px solid red;
         height: 10vh;
         padding-left: 10%;
         display: grid;
         grid-template-columns: 60px 3fr;
-        grid-template-rows: 100%;
         align-items: center;
         gap: 5%;
         
         img {
-            outline: 1px solid red;
             width: 100%;
             justify-self: end;
             filter: invert();
