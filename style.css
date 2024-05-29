@@ -49,11 +49,6 @@ body {
         }
     }
 
-    .upper-nav {
-        outline: 1px solid red;
-    }
-    
-
     .sidebar-cell {
         height: 3rem;
         padding-left: 10%;
@@ -73,6 +68,10 @@ body {
             color: white;
             font-weight: bold;
         }
+    }
+
+    .lower-nav {
+        margin-top: 2rem;
     }
 }
 
