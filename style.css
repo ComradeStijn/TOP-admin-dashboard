@@ -95,8 +95,50 @@ body {
 }
 
 .header-container {
+    height: 10rem;
     grid-area: header;
+    display: grid;
+    grid: 2fr 3fr / 3fr 2fr;
+    grid-template-areas: 
+        "header-search-bar header-top-right"
+        "header-user header-buttons";
+
+    div {
+        /* outline: 1px solid red; */
+    }
 }
+
+.header-search-bar {
+    grid-area: header-search-bar;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+
+    img {
+        height: 2rem;
+    }
+    input {
+        padding-left: 3ch;
+        border-radius: 10px;
+        background-color: var(--fourth-color);
+        border: none;
+    }
+}
+
+.header-top-right {
+    grid-area: header-top-right;
+}
+
+.header-user {
+    grid-area: header-user;
+}
+
+.header-buttons {
+    grid-area: header-buttons;
+}
+
+
 
 .main-container {
     grid-area: main;
