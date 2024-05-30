@@ -106,10 +106,6 @@ body {
     grid-template-areas: 
         "header-search-bar header-top-right"
         "header-user header-buttons";
-
-    div {
-        /* outline: 1px solid red; */
-    }
 }
 
 .header-search-bar {
