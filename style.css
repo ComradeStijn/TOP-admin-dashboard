@@ -227,4 +227,22 @@ body {
     grid-area: main;
     z-index: -1;
     background-color: var(--fourth-color);
+
+    display: grid;
+    grid-template: auto auto / 1fr auto;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+}
+
+#main-projects {
+    grid-area: projects;
+}
+
+#main-trending {
+    grid-area: trending;
+}
+
+#main-announcements {
+    grid-area: announcements;
 }
